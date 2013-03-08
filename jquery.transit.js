@@ -9,7 +9,7 @@
 
 (function($) {
   $.transit = {
-    version: "0.9.9",
+    version: "0.9.9.1",
 
     // Map of $.css() keys to values for 'transitionProperty'.
     // See https://developer.mozilla.org/en/CSS/CSS_transitions#Properties_that_can_be_animated
