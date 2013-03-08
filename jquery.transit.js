@@ -595,6 +595,8 @@
           });
         }
 
+        $(this).removeClass('transitioning');
+
         if (typeof callback === 'function') { callback.apply(self); }
         if (typeof nextCall === 'function') { nextCall(); }
       };
@@ -609,6 +611,7 @@
       }
 
       // Apply transitions.
+      $(this).addClass('transitioning');
       self.each(function() {
         if (i > 0) {
           this.style[support.transition] = transitionValue;
